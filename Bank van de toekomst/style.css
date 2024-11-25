@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    width: 100%;
+    padding: rem;
+    min-height: 13vh;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    background: bisque;
+    justify-content: space-between;
+    
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav img {
+    width: 10vw;
+  }
