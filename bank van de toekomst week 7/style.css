@@ -1,0 +1,129 @@
+/* Algemene stijl */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe3f0, #ffb8d4);
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 10px;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ffb8d4;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff4d77;
+  }
+  
+  .header p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #7a7a7a;
+  }
+  
+  .crypto-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .crypto-overview {
+    margin-bottom: 20px;
+  }
+  
+  .crypto-list > div {
+    background-color: #f8dfe8;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+  }
+  
+  .crypto-list > div:hover {
+    transform: scale(1.02);
+  }
+  
+  .crypto-management label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ff4d77;
+  }
+  
+  .crypto-management input,
+  .crypto-management select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ff80a4;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .crypto-management input:focus,
+  .crypto-management select:focus {
+    outline: none;
+    border-color: #ff4d77;
+    background-color: #ffedf3;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .actions button {
+    width: 48%;
+    padding: 10px;
+    background-color: #ff4d77;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .actions button:hover {
+    background-color: #e53d67;
+    transform: translateY(-3px);
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .message.success {
+    color: #2ecc71;
+  }
+  
+  .message.error {
+    color: #e74c3c;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #ffe3f0;
+    font-size: 0.9rem;
+    color: #7a7a7a;
+  }
+  
+  

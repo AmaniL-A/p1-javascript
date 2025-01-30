@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptovaluta Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cryptovaluta Dashboard</h1>
+  </header>
+  <main class="crypto-container">
+    <section class="crypto-overview">
+      <div id="cryptoList" class="crypto-list">
+        <!-- Dynamische cryptowaarden -->
+      </div>
+    </section>
+    <section class="crypto-management">
+      <label for="cryptoSelect">Selecteer een cryptovaluta:</label>
+      <select id="cryptoSelect" onchange="updateCryptoDetails()"></select>
+
+      <label for="cryptoAmount">Voer een bedrag in (€):</label>
+      <input type="number" id="cryptoAmount" placeholder="Bijvoorbeeld 100" />
+
+      <div class="actions">
+        <button onclick="buyCrypto()">Kopen</button>
+        <button onclick="sellCrypto()">Verkopen</button>
+      </div>
+
+      <p id="cryptoMessage" class="message"></p>
+    </section>
+  </main>
+  <footer class="footer">
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
