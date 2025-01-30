@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleggingen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Beleggingen</h1>
+  <div class="investment-section">
+    <p>Beschikbaar saldo: <span id="balance">€1000.00</span></p>
+    <label for="category">Kies een categorie:</label>
+    <select id="category" onchange="updateProducts()">
+      <option value="aandelen">Aandelen</option>
+      <option value="crypto">Cryptocurrencies</option>
+    </select>
+
+    <label for="product">Kies een product:</label>
+    <select id="product" onchange="updatePrice()">
+      <!-- Producten worden dynamisch toegevoegd -->
+    </select>
+
+    <p>Huidige prijs: <span id="currentPrice">€200.00</span></p>
+    <p>In bezit: <span id="ownedUnits">2 eenheden</span></p>
+
+    <label for="amount">Bedrag:</label>
+    <input type="number" id="amount" placeholder="Bedrag invoeren">
+
+    <button onclick="buyInvestment()">Kopen</button>
+    <button onclick="sellInvestment()">Verkopen</button>
+
+    <p id="investmentMessage" class="message"></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

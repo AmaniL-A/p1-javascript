@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .investment-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .investment-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .investment-section select, .investment-section input, .investment-section button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .investment-section button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .investment-section button:hover {
+    background-color: #0056b3;
+  }
+  .message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .message.success {
+    color: green;
+  }
+  .message.error {
+    color: red;
+  }
+  
